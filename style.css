@@ -1,0 +1,161 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 3fr 0.5fr;
+    height: 3000px;
+    grid-template-rows: 100px 4fr 300px;
+  }
+  
+  .item {
+    border: 1px dotted darkgray;
+    width: auto;
+  }
+  
+  .item:first-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  
+  .item:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+  
+  .item:nth-child(7) {
+    grid-row-start: 3;
+    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  
+  #logo {
+    background-image: url(my_web_picture/10.jpg);
+  }
+  
+  .minu {
+    background-color: black;
+  }
+  
+  body {
+    background: rgb(35, 40, 64);
+    color: rgb(163, 202, 205);
+    padding: 0px;
+    font-feature-settings: "liga" 0;
+    line-height: 1.7;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+  }
+  
+  p, ul, ol {
+    margin: 0px 0px 20px;
+  }
+  
+  p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.8;
+    padding: 20px;
+  }
+  
+  
+  .nav-container-design, .nav-container-design:link, .nav-container-design:visited, .nav-container-design:active, .nav-container-design:focus {
+    color: rgb(246, 73, 167);
+    text-shadow: rgb(246 73 167 / 40%) 0px 2px 3px;
+  }
+  
+  a, a:link, a:visited, a:active, a:focus {
+    color: rgb(246, 73, 167);
+  }
+  
+  .nav-container-design {
+    display: flex;
+      white-space: nowrap;
+      margin: 0px 0px 6.6px;
+      font-size: 1rem;
+      font-weight: 800;
+      position: relative;
+      text-decoration: none;
+      transition: all 300ms ease-in 0s;
+  }
+  
+  #nav-container {
+    -webkit-box-flex: 1;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 30px 20px;
+      overflow-y: auto;
+  }
+  
+  .first-letter {
+    float: left;
+    display: block;
+    font-size: 7rem;
+    margin-right: 20px;
+    line-height: 1;
+  }
+  
+  
+   /*head css*/
+  #garchig {
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .ded_garchig {
+    font-size: 40px;
+    margin-left: 30px;
+  }
+  
+  /*text dundah pic*/
+  .text_pic {
+    width: 350px;
+    height: 250px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  .text_pic2 {
+    width: 350px;
+    height: 250px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  body
+          * {box-sizing: border-box;}
+          
+          input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+          }
+          
+          input[type=submit] {
+            background-color:  rgb(246, 73, 167);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+          
+          input[type=submit]:hover {
+            background-color:  rgb(246, 73, 167);
+          }
+          
+          .container {
+            border-radius: 5px;
+            background-color: rgb(35, 40, 64) ;
+            padding: 20px;
+          }
